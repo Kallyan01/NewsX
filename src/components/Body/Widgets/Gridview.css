@@ -1,0 +1,81 @@
+.lg-cell {
+    height: 60.5vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.lg-cell img {
+    height: 100%;
+    width: 100%;
+    transition: .5s ease;
+}
+
+.cell-theme::after {
+    position: absolute;
+    content: '';
+    height: 50%;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0), rgb(7, 7, 7) 80%);
+}
+
+.lg-cell img:hover {
+    transform: scale(1.1);
+}
+
+.cell-theme:hover::after {
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0)10%, rgb(7, 7, 7) 80%);
+}
+
+.lg-cell p {
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    z-index: 10;
+    color: #fff;
+    font-size: 1.4em;
+}
+
+.sm-cell {
+    height: 30vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.sm-cell img {
+    height: 100%;
+    width: 100%;
+    transition: .5s ease;
+}
+
+.sm-cell img:hover {
+    transform: scale(1.1);
+}
+
+.sm-cell p {
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    z-index: 10;
+    color: #fff;
+    font-size: 1em;
+}
+
+@media screen and (max-width:770px) {
+    .lg-cell {
+        height: 30vh;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+}

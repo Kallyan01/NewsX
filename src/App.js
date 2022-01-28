@@ -1,24 +1,23 @@
 import logo from './logo.svg';
 import './App.css';
-
+import Home from './components/Body/Home';
+import Livetv from './components/Body/Livetv';
+import Trending from './components/Body/Trending';
+import Aboutus from './components/Body/Aboutus';
+import { Routes, Route } from 'react-router-dom'
+import {GlobalProvider} from './components/Globalcontext/Contextapi'
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <GlobalProvider>
+      <div className="App">
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/Trending' element={<Trending />} />
+          <Route path='/Livetv' element={<Livetv />} />
+          <Route path='/Aboutus' element={<Aboutus />} />
+        </Routes>
+      </div>
+    </GlobalProvider>
   );
 }
 

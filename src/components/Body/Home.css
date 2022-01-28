@@ -1,0 +1,14 @@
+.landing-body
+{
+    padding: 50px 70px;
+}
+.list-news
+{
+    margin: 10px 0;
+}
+@media screen and (max-width:770px){
+    .landing-body
+{
+    padding: 20px;
+}
+}
