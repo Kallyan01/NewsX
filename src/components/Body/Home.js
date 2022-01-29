@@ -8,14 +8,14 @@ import Weather from './Widgets/Weather';
 import Sports from './Widgets/Sports';
 import Share from './Widgets/Share';
 function Home() {
-  const url = 'https://newsapi.org/v2/top-headlines?country=in&apiKey=743c3242a4844a249158bfdcda849507&page=1';
+  const url = 'https://globapi.herokuapp.com/news';
   const [News, setNews] = useState([])
   const [Loading, setLoading] = useState(true)
   useEffect(async () => {
     console.log("get API Run");
     let data = await axios.get(url)
       .then((data) => {
-        console.log(data.data.articles)
+        console.log(data)
         setNews(data.data.articles)
         setLoading(false)
       })
