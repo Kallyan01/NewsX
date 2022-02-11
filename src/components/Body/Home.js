@@ -6,23 +6,31 @@ import { TailSpin } from 'react-loader-spinner'
 import './Home.css'
 import Weather from './Widgets/Weather';
 import Sports from './Widgets/Sports';
-import Share from './Widgets/Share';
+import Social from './Widgets/Social';
+import Catagory from './Widgets/Catagory';
+import Footer from '../Footer/Footer';
 function Home() {
   const url = 'https://globapi.herokuapp.com/news';
   const [News, setNews] = useState([])
   const [Loading, setLoading] = useState(true)
-  useEffect(async () => {
-    console.log("get API Run");
-    let data = await axios.get(url)
-      .then((data) => {
-        console.log(data)
-        setNews(data.data.articles)
-        setLoading(false)
-      })
-      .catch((err) => console.log(err))
+  useEffect(() => {
+    async function getdata() {
+      let data = await axios.get(url)
+        .then((data) => {
+          console.log(data)
+          setNews(data.data.articles)
+          setLoading(false)
+        })
+        .catch((err) => console.log(err))
+    }
+    getdata();
   }, []);
+  function getwidth() {
+    console.log(window.innerWidth)
+  }
+  window.addEventListener('resize', getwidth)
   return (
-    <>
+    <div className='home'>
       <Navbar />
       <div className="landing-body">
         {
@@ -51,17 +59,28 @@ function Home() {
 
         }
         <div className="list-news grid grid-cols-2 md:grid-cols-4 gap-1 ">
-          <div className='lg-body-cell  bg-gray-300 col-span-2 md:col-span-3  row-span-6 ' >
-
+          <div className='lg-body-cell bg-gray-50 col-span-2 md:col-span-3  row-span-6 ' >
+            <Catagory />
           </div>
-          <div className='sm-body-cell bg-gray-300 col-span-2 md:col-span-1 row-span-6'>
-             <Share/>
-             <Weather/>
-             <Sports/>
+          <div className='sm-body-cell bg-gray-50 col-span-2 md:col-span-1 row-span-6'>
+            <Social />
+            <Weather />
+            <Sports />
           </div>
         </div>
+        {/* <div className="catsocial">
+          <div className="catagory">
+            <Catagory />
+          </div>
+          <div className="sidebar">
+            <Social />
+            <Weather />
+            <Sports />
+          </div>
+        </div> */}
       </div>
-    </>
+      {/* <Footer /> */}
+    </div>
   )
 }
 

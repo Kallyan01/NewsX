@@ -1,12 +1,19 @@
+:root {
+  --theme-txt: rgb(230, 105, 55);
+  --background: #F4F4F4;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
 }
-:root {
-  --theme-txt: rgb(230, 105, 55);
+
+body {
+  background: var(--background);
 }
+
 a {
   text-decoration: none;
-  color: var(--theme-txt)
 }

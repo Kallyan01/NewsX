@@ -7,10 +7,16 @@
     position: relative;
 }
 
-.lg-cell img {
+.lg-cell a {
     height: 100%;
     width: 100%;
+}
+.grid img
+{
     transition: .5s ease;
+    height: 100%;
+    width: 100%;
+
 }
 
 .cell-theme::after {
@@ -49,7 +55,7 @@
     position: relative;
 }
 
-.sm-cell img {
+.sm-cell a {
     height: 100%;
     width: 100%;
     transition: .5s ease;
@@ -71,11 +77,15 @@
 @media screen and (max-width:770px) {
     .lg-cell {
         height: 30vh;
-        overflow: hidden;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: relative;
+    }
+    .lg-cell p {
+        font-size: 1em;
+    }
+    .sm-cell {
+        height: 20vh;
+    }
+    .sm-cell p {
+        font-size: .7em;
     }
 
 }

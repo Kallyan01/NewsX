@@ -1,0 +1,30 @@
+.searchbox
+{
+    width: 100%;
+    position: absolute;
+    background-color: red;
+    top: 100%;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    z-index: 0;
+    /* transform: translateY(-10px); */
+    /* transform-origin: left; */
+    transition: all .5s ease;
+}
+.searchinput
+{
+    display: flex;
+    justify-content: space-evenly;
+    /* align-items: center; */
+    background-color: #ff2600;
+}
+.searchinput input
+{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 90%;
+    padding: 0 5px;
+    font-size: 1.2em;
+}
