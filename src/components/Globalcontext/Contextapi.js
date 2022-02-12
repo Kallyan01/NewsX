@@ -4,7 +4,7 @@ export const GlobalContext = createContext({});
 
 export const GlobalProvider = ({ children }) => {
     const [Navopen, setNavopen] = useState(-100);
-    const [Searchboxpos,setSearchboxpos]= useState(100)
+    const [Searchboxpos,setSearchboxpos]= useState(0)
 
 
     return (

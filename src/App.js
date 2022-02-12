@@ -7,18 +7,19 @@ import Aboutus from './components/Body/Aboutus';
 import { Routes, Route } from 'react-router-dom'
 import { GlobalProvider } from './components/Globalcontext/Contextapi'
 import Sports from './components/Body/Widgets/Catagory/Sports';
-import Buisness from './components/Body/Widgets/Catagory/Buisness';
 import Health from './components/Body/Widgets/Catagory/Health';
 import Science from './components/Body/Widgets/Catagory/Science';
 import Technology from './components/Body/Widgets/Catagory/Technology';
+import Entertainment from './components/Body/Widgets/Catagory/Entertainment';
+import Business from './components/Body/Widgets/Catagory/Buisness';
 function App() {
   return (
     <GlobalProvider>
       <div className="App">
         <Routes>
           <Route path='/' element={<Home />} >
-            <Route path='' element={ <Buisness/>} />
-            <Route path='Entertainment' element={<Sports/>} />
+            <Route path='' element={ <Business/>} />
+            <Route path='Entertainment' element={<Entertainment/>} />
             <Route path='Health' element={ <Health/>} />
             <Route path='Science' element={ <Science/>} />
             <Route path='Sports' element={ <Sports/>} />

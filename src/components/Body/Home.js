@@ -25,10 +25,10 @@ function Home() {
     }
     getdata();
   }, []);
-  function getwidth() {
-    console.log(window.innerWidth)
-  }
-  window.addEventListener('resize', getwidth)
+  // function getwidth() {
+  //   console.log(window.innerWidth)
+  // }
+  // window.addEventListener('resize', getwidth)
   return (
     <div className='home'>
       <Navbar />

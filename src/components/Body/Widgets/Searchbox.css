@@ -28,3 +28,10 @@
     padding: 0 5px;
     font-size: 1.2em;
 }
+.searchresult
+{
+    background-color: rgba(0, 0, 0, 0.774);
+    overflow-y: scroll;
+    height: 100vh;
+    width: 100%;
+}
