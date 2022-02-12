@@ -3,8 +3,9 @@ import Articleone from './articlecards/Articleone'
 import Listarticle from './articlecards/Listarticle'
 import axios from 'axios'
 import './Catagorynewslist.css'
+import Categoryloading from './Categoryloading'
 function Business() {
-  const [Loading,setLoading]=useState(true)
+  const [Loading, setLoading] = useState(true)
   const [Data, setData] = useState([])
   const url = 'https://globapi.herokuapp.com/onenews?category=business&country=in'
   useEffect(() => {
@@ -18,23 +19,26 @@ function Business() {
     }
     callapi();
   }, [])
-  return (
+  return (Loading === true ? (
+   <Categoryloading/>
+  ) : (
     <div className="catagory-news">
       {
         Data.map((elm, idx) => {
-          if (idx==0)
-            return <Articleone title={Data[0].title} date={Data[0].publishedAt} image={Data[0].urlToImage} description={Data[0].description} loading={Loading}/>
+          if (idx == 0)
+            return <Articleone title={Data[0].title} date={Data[0].publishedAt} image={Data[0].urlToImage} description={Data[0].description} />
         })
-    }
+      }
       <div className="articlist">
         {
           Data.map((elm, idx) => {
             if (idx <= 6 && idx != 0)
-              return <Listarticle tag={'Buisness'} title={elm.title} date={elm.publishedAt} image={elm.urlToImage} loading={Loading} />
+              return <Listarticle tag={'Buisness'} title={elm.title} date={elm.publishedAt} image={elm.urlToImage} />
           })
         }
       </div>
     </div>
+  )
   )
 }
 

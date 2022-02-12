@@ -2,8 +2,10 @@ import React, { useEffect, useState } from 'react'
 import Articleone from './articlecards/Articleone'
 import Listarticle from './articlecards/Listarticle'
 import axios from 'axios'
+import Categoryloading from './Categoryloading'
 function Science() {
   const [Data, setData] = useState([])
+  const [Loading, setLoading] = useState(true)
   const url = 'https://globapi.herokuapp.com/onenews?category=science&country=in'
   useEffect(() => {
     async function callapi() {
@@ -15,7 +17,9 @@ function Science() {
     }
     callapi();
   }, [])
-  return (
+  return (Loading === true ? (
+    <Categoryloading/>
+   ) : (
     <div className="catagory-news">
        {
         Data.map((elm, idx) => {
@@ -32,6 +36,7 @@ function Science() {
         }
       </div>
     </div>
+  )
   )
 }
 

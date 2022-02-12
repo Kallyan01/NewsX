@@ -26,7 +26,8 @@ function Searchbox() {
 
 
     let sbox = {
-        opacity: `${Searchbox}%`
+        opacity: `${Searchbox}%`,
+        display: `${Searchbox===100?('block'):('none')}`
     }
     return (
         <div className="searchbox" style={sbox}>

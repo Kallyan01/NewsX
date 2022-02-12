@@ -2,20 +2,25 @@ import React, { useEffect, useState } from 'react'
 import Articleone from './articlecards/Articleone'
 import Listarticle from './articlecards/Listarticle'
 import axios from 'axios'
+import Categoryloading from './Categoryloading'
 function Sports() {
+  const [Loading, setLoading] = useState(true)
   const [Data, setData] = useState([])
   const url = 'https://globapi.herokuapp.com/onenews?category=sports&country=in'
   useEffect(() => {
     async function callapi() {
       let req = await axios.get(url)
         .then(res => {
+          setLoading(false)
           setData(res.data.articles)
           console.log(Data)
         })
     }
     callapi();
   }, [])
-  return (
+  return (Loading === true ? (
+    <Categoryloading/>
+   ) : (
     <div className="catagory-news">
       {
         Data.map((elm, idx) => {
@@ -32,6 +37,7 @@ function Sports() {
         }
       </div>
     </div>
+  )
   )
 }
 
