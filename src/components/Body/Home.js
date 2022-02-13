@@ -65,7 +65,7 @@ function Home() {
           <div className='sm-body-cell bg-gray-50 col-span-2 md:col-span-1 row-span-6'>
             <Social />
             <Crypto />
-            <Sports />
+            {/* <Sports /> */}
           </div>
         </div>
       </div>
