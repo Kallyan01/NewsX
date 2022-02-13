@@ -1,0 +1,139 @@
+.sh-listarticle
+{
+    height: 20vh;
+    width: 100%;
+    background-color: rgb(250, 250, 250);
+    display: flex;
+    margin: 2px 0;
+    align-items: center;
+    flex-direction: row; 
+}
+.sh-listarticle .sh-thumbnail
+{
+    height: 100%;
+    width: 15%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: red; */
+}
+.sh-listarticle .sh-article-des
+{
+    /* padding: 20px 0; */
+    height: 100%;
+    width: 85%;
+    overflow: hidden;
+    /* background-color: rgb(0, 255, 34); */
+}
+.sh-listarticle .sh-thumbnail img
+{
+    width: 100%;
+    /* height: 100%; */
+    border-radius: .7em;
+}
+.sh-listarticle .sh-thumbnail ,.sh-article-des
+{
+ padding: 5px;   
+}
+.sh-article-des .sh-category
+{
+    height: 10%;
+    display: inline-block;
+    color: rgb(216, 24, 24);
+    font-weight: 700;
+    font-size: 1em;
+}
+.sh-article-des .sh-title
+{
+    height: 70%;
+    display: flex;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    font-size: 1.7em;
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+}
+.sh-article-des .sh-publish-date
+{
+    height: 10%;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    font-size: .7em;
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+}
+@media screen and (max-width:1090px){
+    .sh-listarticle
+{
+    height: 15vh;
+    width: 100%;
+    background-color: rgb(250, 250, 250);
+    display: flex;
+    margin: 2px 0;
+    align-items: center;
+    flex-direction: row; 
+}
+.sh-listarticle .sh-thumbnail
+{
+    height: 100%;
+    width: 40%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: red; */
+}
+.sh-listarticle .sh-article-des
+{
+    /* padding: 20px 0; */
+    height: 100%;
+    width: 60%;
+    overflow: hidden;
+    /* background-color: rgb(0, 255, 34); */
+}
+.sh-listarticle .sh-thumbnail img
+{
+    width: 100%;
+    /* height: 100%; */
+    border-radius: .7em;
+}
+.sh-listarticle .sh-thumbnail ,.sh-article-des
+{
+ padding: 5px;   
+}
+.sh-article-des .sh-category
+{
+    height: 10%;
+    display: inline-block;
+    color: rgb(216, 24, 24);
+    font-weight: 700;
+    font-size: .7em;
+}
+.sh-article-des .sh-title
+{
+    height: 60%;
+    display: flex;
+    align-items: center;
+    font-family: 'Barlow', sans-serif;
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    font-size: 0.8em;
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+}
+.sh-article-des .sh-publish-date
+{
+    height: 10%;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(107, 107, 107);
+    font-weight: 600;
+    font-size: .6em;
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+}
+    
+}

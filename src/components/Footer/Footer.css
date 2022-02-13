@@ -1,5 +1,5 @@
-.footer
-{
+.footer {
+    height: 10vh;
     width: 100%;
     background-color: #000;
     color: #fff;
@@ -7,12 +7,17 @@
     justify-content: center;
     align-items: center;
     padding: 20px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
+    position: relative;
 }
-.footer span
-{
+
+.footer span {
     font-weight: 700;
     color: #be123c;
+}
+
+@media screen and (max-width:400px) {
+    .footer {
+        font-size: .8em;
+    }
+
 }

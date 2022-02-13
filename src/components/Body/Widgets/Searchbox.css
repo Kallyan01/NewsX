@@ -17,7 +17,7 @@
     display: flex;
     justify-content: space-evenly;
     /* align-items: center; */
-    background-color: #ff2600;
+    background-color: #FF2143;
 }
 .searchinput input
 {
@@ -30,8 +30,8 @@
 }
 .searchresult
 {
-    background-color: rgba(0, 0, 0, 0.774);
+    background-color: rgb(0, 0, 0);
     overflow-y: scroll;
-    height: 100vh;
+    height: 90vh;
     width: 100%;
 }

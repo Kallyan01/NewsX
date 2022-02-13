@@ -1,0 +1,57 @@
+.crypto-coin
+{
+    height: 10vh;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+
+}
+.crypto-coin .icon 
+{
+    /* background-color: aqua; */
+    /* height: 2.5em; */
+    display: grid;
+    place-items: center;
+    width: 30%;
+}
+.crypto-coin .icon img
+{
+    height: 2.5em;
+    /* width: 100%; */
+}
+.crypto-coin .nameprice 
+{
+    display: flex;
+    /* background-color: aqua; */
+    flex-direction: column;
+    justify-content: center;
+    /* height: 2.5em; */
+    width: 70%;
+}
+.nameprice .name
+{
+    height: 10%;
+    font-family: 'Inconsolata', monospace;
+    font-size: .8em;
+}
+.nameprice .price
+{
+    height: 90%;
+    font-family: 'Barlow', sans-serif;
+    font-size: 1.7em;
+    display: flex;
+    align-items: center;
+}
+.nameprice .price span
+{
+
+    display: flex;
+    position: relative;
+    top: 6px;
+    margin: 0 5px;
+    font-size: .6em;
+    
+}

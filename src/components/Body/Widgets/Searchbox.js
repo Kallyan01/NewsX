@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react'
 import './Searchbox.css'
 import { GlobalContext } from '../../Globalcontext/Contextapi'
-import Listarticle from './Catagory/articlecards/Listarticle'
+import Searcharticle from './Catagory/articlecards/Searcharticle'
 import axios from 'axios'
 function Searchbox() {
     let { val2 } = useContext(GlobalContext)
@@ -38,8 +38,7 @@ function Searchbox() {
             <div className="searchresult">
                 {
                     Result.map((elm, idx) => {
-                        if (idx <= 10)
-                            return <Listarticle tag={'Buisness'} title={elm.title} date={elm.publishedAt} image={elm.urlToImage} loading={Loading}/>
+                            return <Searcharticle key={elm.id} tag={elm.source.name} title={elm.title} date={elm.publishedAt} image={elm.urlToImage} loading={Loading}/>
                     })
                 }
             </div>

@@ -4,7 +4,7 @@ import Navbar from '../Navbar/Navbar';
 import Gridview from './Widgets/Gridview'
 import { TailSpin } from 'react-loader-spinner'
 import './Home.css'
-import Weather from './Widgets/Weather';
+import Crypto from './Widgets/Crypto';
 import Sports from './Widgets/Sports';
 import Social from './Widgets/Social';
 import Catagory from './Widgets/Catagory';
@@ -64,22 +64,12 @@ function Home() {
           </div>
           <div className='sm-body-cell bg-gray-50 col-span-2 md:col-span-1 row-span-6'>
             <Social />
-            <Weather />
+            <Crypto />
             <Sports />
           </div>
         </div>
-        {/* <div className="catsocial">
-          <div className="catagory">
-            <Catagory />
-          </div>
-          <div className="sidebar">
-            <Social />
-            <Weather />
-            <Sports />
-          </div>
-        </div> */}
       </div>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   )
 }

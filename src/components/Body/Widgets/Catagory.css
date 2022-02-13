@@ -22,6 +22,7 @@
     justify-content: center;
     align-items: center;
     font-size: 1.5em;
+    /* background-color: red; */
 }
 .catagory-nav .catagory-title span
 {
@@ -49,4 +50,12 @@
     font-weight: 600;
     /* color: #000; */
 
+}
+@media screen and (max-width:400px){
+    .catagory-nav .catagory-title {
+
+        font-size: 1.2em;
+        /* background-color: red; */
+    }
+    
 }

@@ -26,14 +26,14 @@ function Business() {
       {
         Data.map((elm, idx) => {
           if (idx == 0)
-            return <Articleone title={Data[0].title} date={Data[0].publishedAt} image={Data[0].urlToImage} description={Data[0].description} />
+            return <Articleone title={Data[0].title} date={Data[0].publishedAt.slice(0, 10)} image={Data[0].urlToImage} description={Data[0].description} url={Data[0].url}/>
         })
       }
       <div className="articlist">
         {
           Data.map((elm, idx) => {
             if (idx <= 6 && idx != 0)
-              return <Listarticle tag={'Buisness'} title={elm.title} date={elm.publishedAt} image={elm.urlToImage} />
+              return <Listarticle tag={'Buisness'} title={elm.title} date={elm.publishedAt.slice(0, 10)} image={elm.urlToImage} url={elm.url}/>
           })
         }
       </div>

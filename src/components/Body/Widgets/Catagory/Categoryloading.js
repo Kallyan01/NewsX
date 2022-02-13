@@ -24,7 +24,7 @@ function Categoryloading() {
             </div>
 
             <div className="articlist">
-                <div className="listarticle">
+                <div className="listarticle loading-list">
                     <div className="loading-thumbnail">
 
                     </div>
@@ -37,7 +37,7 @@ function Categoryloading() {
                         <p className="loading-date"></p>
                     </div>
                 </div>
-                <div className="listarticle">
+                <div className="listarticle loading-list">
                     <div className="loading-thumbnail">
 
                     </div>
@@ -50,7 +50,7 @@ function Categoryloading() {
                         <p className="loading-date"></p>
                     </div>
                 </div>
-                <div className="listarticle">
+                <div className="listarticle loading-list">
                     <div className="loading-thumbnail">
 
                     </div>
@@ -63,7 +63,7 @@ function Categoryloading() {
                         <p className="loading-date"></p>
                     </div>
                 </div>
-                <div className="listarticle">
+                <div className="listarticle loading-list">
                     <div className="loading-thumbnail">
 
                     </div>
@@ -76,7 +76,7 @@ function Categoryloading() {
                         <p className="loading-date"></p>
                     </div>
                 </div>
-                <div className="listarticle">
+                <div className="listarticle loading-list">
                     <div className="loading-thumbnail">
 
                     </div>
@@ -89,7 +89,7 @@ function Categoryloading() {
                         <p className="loading-date"></p>
                     </div>
                 </div>
-                <div className="listarticle">
+                <div className="listarticle loading-list">
                     <div className="loading-thumbnail">
 
                     </div>

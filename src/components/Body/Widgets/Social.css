@@ -1,48 +1,56 @@
 .social {
-    
+
     /* background-color: red; */
     display: flex;
     flex-direction: column;
 }
-.social-title,.social-presence
-{
+
+.social-title, .social-presence {
     width: 100%;
     height: auto;
     display: flex;
 }
-.social-title
-{
+
+.wid-title {
     display: flex;
     /* background-color: blue; */
     position: relative;
+    justify-content: center;
 }
-.social-presence
-{
+
+.wid-title h3 {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 700;
+    color: rgb(255, 73, 73);
+}
+
+.social-presence {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     /* background-color: red; */
 }
-.social-media
-{
+
+.social-media {
     margin: 5px;
-    /* background-color: yellow; */
+    background-color: rgb(255, 255, 255);
     padding: 5px 20px;
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
-.social-icon,.social-followers
-{
+
+.social-icon, .social-followers {
     text-align: center;
 }
-.social-followers span
-{
+
+.social-followers span {
     font-size: .7em;
 }
-.social-followers p
-{
+
+.social-followers p {
     font-weight: 700;
 }
 
@@ -52,31 +60,40 @@ i {
     margin: 10px;
     cursor: pointer;
 }
-.facebook
-{
+
+.facebook {
     background-color: #315aad;
     color: #fff;
     padding: 6px;
     border-radius: 8px;
 }
-.share
-{
+
+.share {
     background-color: #5a5a5a;
     color: #fff;
     padding: 6px;
     border-radius: 8px;
 }
-.whatsapp
-{
+
+.whatsapp {
     background-color: #25D366;
     color: #fff;
     padding: 6px;
     border-radius: 8px;
 }
-.twitter
-{
+
+.twitter {
     background-color: #00acee;
     color: #fff;
     padding: 6px;
     border-radius: 8px;
+}
+
+@media screen and (max-width:1090px) {
+    .social-media {
+        margin: 1px;
+        
+        width: 49%;
+    }
+
 }

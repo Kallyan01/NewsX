@@ -8,7 +8,11 @@ function Listarticle(props) {
             </div>
             <div className="article-des">
                 <p className="category">{props.tag}</p>
-                <p className="title">{props.title}</p>
+                <p className="title">
+                    <a href={props.url} target="_blank" rel="noopener noreferrer"> 
+                    {props.title}
+                    </a>
+                </p>
                 <p className="publish-date">{props.date}</p>
             </div>
         </div>

@@ -3,7 +3,7 @@ import './Social.css'
 function Social() {
   return (
     <div className='social'>
-      <div className="social-title">
+      <div className="wid-title">
         <h3>Followers</h3>
       </div>
       <div className="social-presence">

@@ -7,7 +7,9 @@ function Articleone(props) {
                 <img src={props.image} alt="" srcset="" />
             </div>
             <div className="news-title">
-                <h2>{props.title}</h2>
+                <a href={props.url} target="_blank" rel="noopener noreferrer">
+                    <h2>{props.title}</h2>
+                </a>
                 <p>{props.date}</p>
             </div>
             <div className="thumbnail-description">
