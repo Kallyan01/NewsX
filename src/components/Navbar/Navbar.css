@@ -22,7 +22,7 @@
 } */
 
 .nav-icon {
-    font-size: 1.3em;
+    font-size: 1.9em;
     font-weight: 900;
     width: 100%;
     /* background-color: red; */
@@ -61,16 +61,23 @@
 {
     /* display: none; */
     position: absolute;
-    right: 0;
-    top: 0;
-    transform: translateY(50%);
+    right: 20px;
+    top: 0px;
+    /* bottom: 0; */
+    /* padding: 20px; */
+    height: 100%;
+    /* width: 5%; */
+    display: grid;
+    place-items: center;
+    /* background-color: red; */
+    /* transform: translateY(50%); */
 }
 .searchicon i
 {
     color: #000;
 }
 
-@media screen and (max-width:770px) {
+@media screen and (max-width:800px) {
     .navbar {
         padding: 20px 10px;
 
