@@ -23,7 +23,8 @@ function Navbar() {
     return (
         <nav className={Active === true ? "navbar active" : "navbar"}>
             <div className="nav-icon">
-                <p><span>N</span>ews<span>X</span></p>
+                <p><span>N</span>ews</p>
+                <div className="x">X</div>
             </div>
             {/* <div className="nav-menu">
                 <NavLink to='/'>Home</NavLink>
